@@ -1,0 +1,3 @@
+[submodule "OpenEmu"]
+	path = OpenEmu
+	url = https://github.com/OpenEmu/OpenEmu.git
