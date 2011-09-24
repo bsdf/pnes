@@ -1,6 +1,7 @@
 # taken from openemu.git
 # Xcode
 *.DS_Store
+build
 */build/*
 *.pbxuser
 !default.pbxuser
