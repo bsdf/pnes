@@ -107,7 +107,9 @@ namespace Nes
 		rgbMap (NULL),
 		yuvMap (NULL)
 		{
-			cycles.one = PPU_RP2C02_CC;
+			backgroundEnabled = true;
+			spritesEnabled    = true;
+			cycles.one        = PPU_RP2C02_CC;
 			PowerOff();
 		}
 
@@ -736,11 +738,11 @@ namespace Nes
 
 			if (cpu.GetCycles() >= cycles.reset)
 			{
-				tiles.show[0] = (data & Regs::CTRL1_BG_ENABLED) ? 0xFF : 0x00;
-				tiles.show[1] = (data & Regs::CTRL1_BG_ENABLED_NO_CLIP) == Regs::CTRL1_BG_ENABLED_NO_CLIP ? 0xFF : 0x00;
+				tiles.show[0] = (data & Regs::CTRL1_BG_ENABLED) && backgroundEnabled ? 0xFF : 0x00;
+				tiles.show[1] = ((data & Regs::CTRL1_BG_ENABLED_NO_CLIP) == Regs::CTRL1_BG_ENABLED_NO_CLIP) && backgroundEnabled ? 0xFF : 0x00;
 
-				oam.show[0] = (data & Regs::CTRL1_SP_ENABLED) ? 0xFF : 0x00;
-				oam.show[1] = (data & Regs::CTRL1_SP_ENABLED_NO_CLIP) == Regs::CTRL1_SP_ENABLED_NO_CLIP ? 0xFF : 0x00;
+				oam.show[0] = (data & Regs::CTRL1_SP_ENABLED) && spritesEnabled ? 0xFF : 0x00;
+				oam.show[1] = ((data & Regs::CTRL1_SP_ENABLED_NO_CLIP) == Regs::CTRL1_SP_ENABLED_NO_CLIP) && spritesEnabled ? 0xFF : 0x00;
 
 				const uint pos = (cycles.hClock - 8) >= (256-16);
 

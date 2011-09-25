@@ -381,6 +381,9 @@ namespace Nes
 			*/
 			Result Blit(Output& output) throw();
 
+			void SetBackgroundEnabled(bool enabled) throw();
+			void SetSpritesEnabled(bool enabled) throw();
+
 			/**
 			* YUV decoder presets.
 			*/
