@@ -189,6 +189,16 @@ namespace Nes
 			return RESULT_ERR_NOT_READY;
 		}
 
+		void Video::SetBackgroundEnabled(bool enabled) throw()
+		{
+			emulator.ppu.SetBackgroundEnabled(enabled);
+		}
+
+		void Video::SetSpritesEnabled(bool enabled) throw()
+		{
+			emulator.ppu.SetSpritesEnabled(enabled);
+		}
+
 		Video::RenderState::RenderState() throw()
 		:
 		width  (0),
