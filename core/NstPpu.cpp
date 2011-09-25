@@ -737,7 +737,7 @@ namespace Nes
 
 			if (cpu.GetCycles() >= cycles.reset)
 			{
-                tiles.show[0] = (data & Regs::CTRL1_BG_ENABLED) && backgroundEnabled ? 0xFF : 0x00;
+				tiles.show[0] = (data & Regs::CTRL1_BG_ENABLED) && backgroundEnabled ? 0xFF : 0x00;
 				tiles.show[1] = (data & Regs::CTRL1_BG_ENABLED_NO_CLIP) && backgroundEnabled == Regs::CTRL1_BG_ENABLED_NO_CLIP ? 0xFF : 0x00;
 
 				oam.show[0] = (data & Regs::CTRL1_SP_ENABLED) && spritesEnabled ? 0xFF : 0x00;
