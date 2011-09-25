@@ -71,6 +71,6 @@ NSArray *NESUsedSettingNames = nil;
 
 - (NSString *)gameSystemName;
 {
-	return @"Nintendo (NES)";
+	return @"NES";
 }
 @end
