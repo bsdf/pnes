@@ -493,6 +493,8 @@ static int Heights[2] =
     Nes::Api::Video video( *emulator );
     
     [self toggleUnlimitedSprites:nil];
+	
+	//video.SetBackgroundEnabled(false);
     
     // set up the NTSC type
     /*

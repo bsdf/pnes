@@ -34,7 +34,7 @@
 	<key>NSPrincipalClass</key>
 	<string>NESGameController</string>
 	<key>OESystemPluginName</key>
-	<string>NES</string>
+	<string>Nintendo (NES)</string>
 	<key>SUEnableAutomaticChecks</key>
 	<string>1</string>
 	<key>SUFeedURL</key>

@@ -446,8 +446,6 @@ namespace Nes
 			NameTable nameTable;
 			const TileLut tileLut;
 			Video::Screen screen;
-			bool backgroundEnabled;
-			bool spritesEnabled;
 
 			static const byte yuvMaps[4][0x40];
 
@@ -565,16 +563,6 @@ namespace Nes
 			bool HasSpriteLimit() const
 			{
 				return oam.spriteLimit;
-			}
-
-			void SetBackgroundEnabled(bool enabled)
-			{
-				backgroundEnabled = enabled;
-			}
-
-			void SetSpritesEnabled(bool enabled)
-			{
-				spritesEnabled = enabled;
 			}
 		};
 	}

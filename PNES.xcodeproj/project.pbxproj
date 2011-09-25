@@ -13,6 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
+				639D30AB142FE4B400439F17 /* PBXTargetDependency */,
 				63DEC257142C336C0097E3B0 /* PBXTargetDependency */,
 				63DEC253142C33590097E3B0 /* PBXTargetDependency */,
 			);
@@ -369,6 +370,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		639D30AA142FE4B400439F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63DEC21C142C2CCC0097E3B0 /* OpenEmu.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 826415A113EDC24600591582;
+			remoteInfo = "Build & Copy NES Plugin";
+		};
 		63DEC237142C2CCD0097E3B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63DEC21C142C2CCC0097E3B0 /* OpenEmu.xcodeproj */;
@@ -2499,6 +2507,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		639D30AB142FE4B400439F17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Build & Copy NES Plugin";
+			targetProxy = 639D30AA142FE4B400439F17 /* PBXContainerItemProxy */;
+		};
 		63DEC253142C33590097E3B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OpenEmu;
@@ -2540,6 +2553,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Library/Frameworks\"",
+					"\"$(SRCROOT)/../Desktop/binarygod-BGHUDAppKit-6eaee43/build/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PNES_Prefix.pch;
@@ -2562,6 +2576,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Library/Frameworks\"",
+					"\"$(SRCROOT)/../Desktop/binarygod-BGHUDAppKit-6eaee43/build/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PNES_Prefix.pch;
@@ -2699,6 +2714,7 @@
 				63DEC251142C33500097E3B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82C9CA6F0F0847160071460B /* Build configuration list for PBXAggregateTarget "Distribution" */ = {
 			isa = XCConfigurationList;

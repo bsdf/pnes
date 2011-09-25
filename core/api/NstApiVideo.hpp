@@ -382,20 +382,6 @@ namespace Nes
 			Result Blit(Output& output) throw();
 
 			/**
-			 * Turns the background on or off.
-			 *
-			 * @param enabled true to enable
-			 */
-			void SetBackgroundEnabled(bool enabled) throw();
-
-			/**
-			 * Turns the sprite layer on or off.
-			 *
-			 * @param enabled true to enable
-			 */
-			void SetSpritesEnabled(bool enabled) throw();
-
-			/**
 			* YUV decoder presets.
 			*/
 			enum DecoderPreset
